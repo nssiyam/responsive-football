@@ -124,3 +124,32 @@ h1{
     font-feature-settings: 'liga' off;
     color: #6C6C6C;
 }
+
+
+
+/*-----------------*\
+    Footer styles  
+\*-----------------*/
+footer{
+    width: 483.87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 63px;
+}
+footer img{
+    width: 100%;
+}
+footer i{
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    margin: 0px 14px;
+    color: #969BAB;
+}
+footer p{
+    font-size: 18px;
+    font-weight: 400;
+}
