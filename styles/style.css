@@ -27,9 +27,9 @@ body{
     transform: scale(1.2);
 }
 
-/*------------------------*\ 
-    Header common styles 
-\*------------------------*/
+/*------------------*\ 
+    Header styles 
+\*------------------*/
 
 header{
     background-color: #2d25a0;
@@ -80,4 +80,47 @@ h1{
 }
 .container:hover .top-part span img{
     transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/*---------------*\ 
+    Main styles 
+\*---------------*/
+
+/* Players album styles */
+.players-album{
+    width: 1050px;
+    margin-top: 70px;
+    margin-bottom: 165px;
+    margin-left: calc((100% - 1050px) / 2);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    align-items: center;
+}
+.players{
+    width: 330px;
+    padding: 16px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+.players img{
+    width: 300px;
+    height: 256px;
+    margin: 0;
+    transition: .5s;
+}
+.players:hover img{
+    transform: scale(1.2);
+}
+.players h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+.players p{
+    font-size: 16px;
+    font-weight: 400;
+    font-feature-settings: 'liga' off;
+    color: #6C6C6C;
 }
