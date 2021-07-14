@@ -128,9 +128,9 @@ h1{
 
 /* Highlight styles */
 .highlight{
-    width: 80%;
+    width: 75%;
     margin: 8px 0px;
-    margin-left: calc((100% - 80%) / 2);    display: grid;
+    margin-left: calc((100% - 75%) / 2);    display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-column-gap: 66px;
     justify-content: space-between;
@@ -147,6 +147,7 @@ h1{
     color: #6C6C6C;
 }
 .highlight img{
+    float: right;
     width: 567px;
     height: 427px;
 }
@@ -177,4 +178,65 @@ footer i{
 footer p{
     font-size: 18px;
     font-weight: 400;
+}
+
+/*-----------------*\
+    Media queries 
+\*-----------------*/
+
+/* Mobile devices */
+@media only screen and (max-width:360px) {
+    /* navbar styles for mobile  */
+    nav{
+        display: none;
+    }
+
+    /* Top banner styles for mobile  */
+    .top-part{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        grid-row-gap: 50px;
+        margin-top: 16px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    .top-part span img{
+        width: 278px;
+        height: 138px;
+    }
+
+    /* Players album styles for mobile*/
+    .players-album{
+        width: 360px;
+        margin-left: 15px;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 24px;
+        margin-bottom: 60px;
+    }
+
+    /* highlight styles for mobile */
+    .highlight{
+        width: 90%;
+        margin-left: calc((100% - 90%) / 2);
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 29px;
+        margin-bottom: 43px;
+    }
+    .highlight h2{
+        font-size: 30px;
+    }
+    .highlight img{
+        width: 328px;
+        height: 248px;
+    }
+    /* footer styles for mobile  */
+    footer{
+        width: 100%;
+    }
+    footer img{
+        width: 150px;
+        height: 63px;
+    }
 }
