@@ -1,0 +1,83 @@
+/*---------------*\
+    Font styles 
+\*---------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*-----------------*\
+    Common styles 
+\*-----------------*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.btn{
+    background-color: #E02C6D;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    border-radius: 5px;
+    transform: scale(1.2);
+}
+
+/*------------------------*\ 
+    Header common styles 
+\*------------------------*/
+
+header{
+    background-color: #2d25a0;
+    padding: 42px 123px 86px 156px;
+}
+
+/* Navbar styles */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    margin-right: 36px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s;
+}
+nav a:hover{
+    color: #E02C6D;
+    border-bottom: 2px solid #E02C6D;
+}
+
+/* Top banner style */
+
+.top-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 67px;
+}
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+}
+.top-part span img{
+    float: right;
+    width: 556.01px;
+    height: 438px;
+    /* transition: property duration timing-function delay|initial|inherit; */
+    transition: transform .4s ease-in .1s;
+}
+.container:hover .top-part span img{
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
